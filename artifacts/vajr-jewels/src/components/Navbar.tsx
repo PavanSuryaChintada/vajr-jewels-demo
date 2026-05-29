@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import BrandMark from '@/components/BrandMark';
 
 export default function Navbar() {
   const { scrollY } = useScroll();
@@ -21,8 +22,8 @@ export default function Navbar() {
       transition={{ delay: 3, duration: 1 }}
     >
       <div className="container mx-auto px-6 h-24 flex items-center justify-between">
-        <a href="/" className="relative flex items-center justify-center w-16 h-16 rounded-full bg-background/50 backdrop-blur-sm" data-testid="link-home">
-          <img src="/vajr-jewels-logo.png" alt="VAJR JEWELS" className="h-10 w-auto object-contain" />
+        <a href="/" data-testid="link-home">
+          <BrandMark size="sm" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

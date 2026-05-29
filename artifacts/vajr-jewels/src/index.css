@@ -98,7 +98,7 @@
   html { scroll-behavior: smooth; }
   body {
     @apply font-sans antialiased bg-background text-foreground;
-    cursor: none;
+    cursor: auto;
   }
 }
 

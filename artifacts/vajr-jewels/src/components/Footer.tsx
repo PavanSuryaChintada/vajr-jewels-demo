@@ -1,4 +1,5 @@
 import React from 'react';
+import BrandMark from '@/components/BrandMark';
 
 export default function Footer() {
   return (
@@ -6,7 +7,9 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <img src="/vajr-jewels-logo.png" alt="VAJR JEWELS" className="h-12 w-auto mb-6" />
+            <div className="mb-6">
+              <BrandMark size="md" />
+            </div>
             <p className="text-muted-foreground font-light max-w-sm">
               Crafting eternity since 1985. The premier destination for ultra-luxury Indian fine jewelry, specializing in rare diamonds and majestic emeralds.
             </p>

@@ -18,7 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     document.body.style.overflow = loading ? 'hidden' : 'auto';
-    const timer = setTimeout(() => setLoading(false), 2500);
+    const timer = setTimeout(() => setLoading(false), 4000);
     return () => { clearTimeout(timer); document.body.style.overflow = 'auto'; };
   }, [loading]);
 

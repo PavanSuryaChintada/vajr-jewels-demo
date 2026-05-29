@@ -1,0 +1,348 @@
+# VAJR JEWELS — ULTRA LUXURY CINEMATIC E-COMMERCE WEBSITE
+
+Create an award-winning luxury jewelry website for "VAJR JEWELS" that feels like a blend of Cartier, Bulgari, Tiffany & Co., Van Cleef & Arpels, and an Awwwards-winning interactive experience.
+
+Tech Stack:
+
+* Next.js 15
+* TypeScript
+* Tailwind CSS
+* GSAP
+* Framer Motion
+* Lenis Smooth Scroll
+* Three.js / React Three Fiber
+* Shadcn UI
+* Fully Responsive
+
+Design Direction:
+The website must not feel like a normal jewelry store.
+
+It should feel like entering a luxury jewelry universe.
+
+Visual Style:
+
+* Dark luxury background
+* Cinematic lighting
+* Rich emerald green accents inspired by gemstones
+* Rose gold and champagne gold highlights
+* Premium glassmorphism
+* Luxury shadows
+* Floating particles
+* Diamond sparkle effects
+* Museum-grade product presentation
+
+Color Palette:
+
+Primary Background:
+#070707
+
+Secondary Background:
+#111111
+
+Luxury Gold:
+#D4AF37
+
+Rose Gold:
+#B76E79
+
+Emerald Green:
+#0F6A5B
+
+Dark Emerald:
+#073C35
+
+Ivory White:
+#F8F6F0
+
+Premium Silver:
+#C8CDD4
+
+Typography:
+
+* Cormorant Garamond
+* Playfair Display
+* Inter
+
+Luxury Loading Experience:
+
+Opening Animation:
+
+* Black screen
+* Diamond outline appears
+* VAJR JEWELS logo slowly emerges
+* Metallic shimmer animation
+* Floating particles
+* Cinematic reveal
+* Smooth transition into hero section
+
+Hero Section:
+
+Full viewport immersive experience.
+
+Background:
+
+* Floating luxury jewelry showcase
+* Cinematic lighting
+* Slow camera movement
+* Luxury depth of field effect
+
+Centerpiece:
+A large premium necklace floating in 3D.
+
+As user moves mouse:
+
+* Jewelry subtly rotates
+* Sparkles follow gemstones
+* Reflection reacts to cursor
+
+Text Animation:
+
+"Crafted For Eternity"
+
+Every word reveals individually.
+
+CTA Buttons:
+
+* Explore Collection
+* Book Appointment
+
+Buttons have premium magnetic hover effects.
+
+Scroll Animation System:
+
+Use GSAP ScrollTrigger extensively.
+
+Every section should have:
+
+* Fade
+* Scale
+* Rotation
+* Perspective transforms
+* Layered parallax
+* Cinematic reveals
+
+Scrolling must feel like luxury storytelling.
+
+Section 2:
+Brand Story
+
+As user scrolls:
+
+Golden lines draw themselves.
+
+Jewelry pieces emerge from darkness.
+
+Text reveals line-by-line.
+
+Luxury timeline animation.
+
+Section 3:
+Featured Collections
+
+Collections:
+
+* Diamond Collection
+* Emerald Collection
+* Bridal Collection
+* Heritage Collection
+* Daily Luxury Collection
+* Signature Collection
+
+Cards Animation:
+
+Each collection card:
+
+* Appears from depth
+* Floating hover
+* 3D tilt interaction
+* Luxury glow effect
+
+When hovered:
+
+* Jewelry rotates
+* Gemstones sparkle
+* Background illuminates
+
+Section 4:
+Horizontal Scroll Gallery
+
+Create cinematic horizontal scrolling.
+
+Large luxury imagery.
+
+As user scrolls:
+
+* Jewelry moves independently
+* Text moves at different speeds
+* Multi-layer parallax
+
+Awwwards-style storytelling.
+
+Section 5:
+Bridal Experience
+
+Full-screen luxury section.
+
+Background:
+Soft spotlight.
+
+Showcase:
+Bridal jewelry sets.
+
+Animations:
+
+* Necklace assembles piece by piece
+* Earrings float into position
+* Gemstones illuminate
+
+Luxury cinematic transitions.
+
+Section 6:
+3D Product Showcase
+
+Interactive 3D jewelry viewer.
+
+User can:
+
+* Rotate jewelry
+* Zoom
+* Inspect details
+
+Realistic reflections.
+
+Physically-based rendering.
+
+Diamond sparkle simulation.
+
+Section 7:
+Luxury Shopping Experience
+
+Premium product grid.
+
+Features:
+
+* Quick View
+* Wishlist
+* Compare
+* Add to Cart
+
+Animations:
+
+* Product reveal on hover
+* Floating cards
+* Luxury transitions
+
+Section 8:
+Signature Craftsmanship
+
+Luxury storytelling section.
+
+Show:
+
+* Sketches
+* CAD concepts
+* Stone selection
+* Hand finishing
+
+Animations:
+Each step appears through cinematic transitions.
+
+Section 9:
+Customer Testimonials
+
+Luxury cards.
+
+Glassmorphism.
+
+Auto-scroll animation.
+
+Premium reveal effects.
+
+Section 10:
+Appointment Booking
+
+Luxury booking experience.
+
+Golden borders.
+
+Elegant forms.
+
+Animated interactions.
+
+WhatsApp Integration.
+
+Section 11:
+Store Experience
+
+Interactive map.
+
+Luxury showroom gallery.
+
+Virtual walkthrough style design.
+
+Footer:
+
+Luxury dark footer.
+
+Animated logo.
+
+Gold accents.
+
+Instagram integration.
+
+Social links.
+
+Newsletter signup.
+
+Micro Interactions:
+
+* Cursor glow
+* Magnetic buttons
+* Image tilt effects
+* Diamond sparkle trails
+* Luxury hover states
+* Floating gemstone particles
+* Scroll-based lighting changes
+
+Performance Requirements:
+
+* 60 FPS animations
+* Lazy loading
+* Optimized images
+* SEO optimized
+* Mobile-first responsive
+* Accessibility compliant
+
+Special Effects:
+
+* Floating diamonds in background
+* Cinematic spotlight effects
+* Premium reflections
+* Dynamic gemstone glow
+* Luxury particle engine
+* Smooth page transitions
+* Premium loading states
+
+Demo Content:
+
+Generate luxury AI jewelry images if real images are unavailable.
+
+Use:
+
+* Emerald necklaces
+* Diamond earrings
+* Bridal jewelry sets
+* Luxury bangles
+* Heritage pieces
+
+Brand Name:
+VAJR JEWELS
+
+Logo:
+Use provided Vajr Jewels logo.
+
+Final Result Goal:
+
+The website should feel like an Awwwards Website of the Year nominee.
+
+Users should experience luxury, exclusivity, elegance, craftsmanship, prestige, and emotion from the first second of interaction.

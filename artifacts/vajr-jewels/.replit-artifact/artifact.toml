@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "VAJR JEWELS"
+version = "1.0.0"
+id = "artifacts/vajr-jewels"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19829
+
+[services.development]
+run = "pnpm --filter @workspace/vajr-jewels run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/vajr-jewels", "run", "build" ]
+publicDir = "artifacts/vajr-jewels/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19829"
+BASE_PATH = "/"

@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "wgtTHTKUBanzp9h-sq8-z"
+uri = "file://artifacts/vajr-jewels/public/hero.png"
+type = "image"
+title = "diamond necklace floating on dark"
+
+[[generated]]
+id = "QfEZGOSHSl7SGEUdsmjCk"
+uri = "file://artifacts/vajr-jewels/public/story.png"
+type = "image"
+title = "elegant luxury jewelry on dark"
+
+[[generated]]
+id = "8h2vru_HNuSzn_g6wSXSn"
+uri = "file://artifacts/vajr-jewels/public/col-diamond.png"
+type = "image"
+title = "diamond collection on black velvet"
+
+[[generated]]
+id = "fMLpkgq6vhm9d0pZ5xQe-"
+uri = "file://artifacts/vajr-jewels/public/col-emerald.png"
+type = "image"
+title = "emerald jewelry on dark green"
+
+[[generated]]
+id = "I9tMNPStis96VN9l78Kkv"
+uri = "file://artifacts/vajr-jewels/public/col-bridal.png"
+type = "image"
+title = "heavy bridal gold diamond jewelry"
+
+[[generated]]
+id = "CdgvvElVjtjBFLWc4728o"
+uri = "file://artifacts/vajr-jewels/public/col-heritage.png"
+type = "image"
+title = "antique heritage kundan jewelry"
+
+[[generated]]
+id = "JfvIr5W-83wnD5Erd-iXt"
+uri = "file://artifacts/vajr-jewels/public/col-daily.png"
+type = "image"
+title = "minimal daily luxury diamond jewelry"
+
+[[generated]]
+id = "_pqZLOm6BJC57hLYfsYgp"
+uri = "file://artifacts/vajr-jewels/public/col-signature.png"
+type = "image"
+title = "signature exclusive diamond piece"
+
+[[generated]]
+id = "47Njb84DjPhxqXwqMRKeG"
+uri = "file://artifacts/vajr-jewels/public/bridal-hero.png"
+type = "image"
+title = "bridal Indian jewelry set diamonds"
+
+[[generated]]
+id = "eI38QZiTlsWb9ttQCK-Uf"
+uri = "file://artifacts/vajr-jewels/public/hs-1.png"
+type = "image"
+title = "macro shot of diamond ring"

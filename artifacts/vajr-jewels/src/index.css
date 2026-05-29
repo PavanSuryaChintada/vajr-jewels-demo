@@ -11,39 +11,30 @@
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
-
   --color-card: hsl(var(--card));
   --color-card-foreground: hsl(var(--card-foreground));
   --color-card-border: hsl(var(--card-border));
-
   --color-popover: hsl(var(--popover));
   --color-popover-foreground: hsl(var(--popover-foreground));
   --color-popover-border: hsl(var(--popover-border));
-
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-primary-border: var(--primary-border);
-
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
   --color-secondary-border: var(--secondary-border);
-
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-muted-border: var(--muted-border);
-
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
   --color-accent-border: var(--accent-border);
-
   --color-destructive: hsl(var(--destructive));
   --color-destructive-foreground: hsl(var(--destructive-foreground));
   --color-destructive-border: var(--destructive-border);
-
   --font-sans: var(--app-font-sans);
   --font-serif: var(--app-font-serif);
   --font-mono: var(--app-font-mono);
-
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -55,33 +46,24 @@
   --app-font-serif: 'Cormorant Garamond', serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0rem;
-  
   --background: 0 0% 3%;
   --foreground: 40 33% 97%;
-  
   --card: 0 0% 7%;
   --card-foreground: 40 33% 97%;
   --card-border: 46 63% 52%;
-  
   --popover: 0 0% 7%;
   --popover-foreground: 40 33% 97%;
   --popover-border: 46 63% 52%;
-  
   --primary: 46 63% 52%;
   --primary-foreground: 0 0% 3%;
-  
   --secondary: 0 0% 7%;
   --secondary-foreground: 40 33% 97%;
-  
   --muted: 0 0% 15%;
   --muted-foreground: 0 0% 60%;
-  
   --accent: 172 74% 24%;
   --accent-foreground: 40 33% 97%;
-  
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 40 33% 97%;
-  
   --border: 46 63% 52%;
   --input: 0 0% 15%;
   --ring: 46 63% 52%;
@@ -90,75 +72,255 @@
 .dark {
   --background: 0 0% 3%;
   --foreground: 40 33% 97%;
-  
   --card: 0 0% 7%;
   --card-foreground: 40 33% 97%;
   --card-border: 46 63% 52%;
-  
   --popover: 0 0% 7%;
   --popover-foreground: 40 33% 97%;
   --popover-border: 46 63% 52%;
-  
   --primary: 46 63% 52%;
   --primary-foreground: 0 0% 3%;
-  
   --secondary: 0 0% 7%;
   --secondary-foreground: 40 33% 97%;
-  
   --muted: 0 0% 15%;
   --muted-foreground: 0 0% 60%;
-  
   --accent: 172 74% 24%;
   --accent-foreground: 40 33% 97%;
-  
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 40 33% 97%;
-  
   --border: 46 63% 52%;
   --input: 0 0% 15%;
   --ring: 46 63% 52%;
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
   body {
     @apply font-sans antialiased bg-background text-foreground;
     cursor: none;
   }
 }
 
-.text-gold {
-  color: hsl(var(--primary));
-}
-.bg-gold {
-  background-color: hsl(var(--primary));
-}
-.border-gold {
-  border-color: hsl(var(--primary));
-}
+/* ─── Utilities ─────────────────────────────────────────── */
+.text-gold   { color: hsl(var(--primary)); }
+.bg-gold     { background-color: hsl(var(--primary)); }
+.border-gold { border-color: hsl(var(--primary)); }
 
-.glow-hover:hover {
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-}
-
-.floating-particles {
+/* ─── Story chapters (all stack in the pinned viewport) ─── */
+.story-chapter {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  display: flex;
+  z-index: 10;
   pointer-events: none;
-  background-image: radial-gradient(circle, hsl(var(--primary) / 0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
-  animation: float 20s linear infinite;
+}
+.story-chapter a,
+.story-chapter button { pointer-events: auto; }
+
+/* ─── Hero typography sizing ────────────────────────────── */
+.hero-word-crafted,
+.hero-word-eternity {
+  font-size: clamp(4rem, 14vw, 13rem);
+  letter-spacing: 0.12em;
+}
+.hero-word-for {
+  font-size: clamp(3rem, 10vw, 9rem);
+  letter-spacing: 0.04em;
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50px); }
+/* ─── Shimmer sweep line below Chapter 3 ───────────────── */
+.shimmer-line {
+  width: clamp(120px, 30vw, 320px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  background-size: 200% 100%;
+  animation: shimmer-sweep 3s ease-in-out infinite;
+}
+@keyframes shimmer-sweep {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ─── Scroll indicator line ─────────────────────────────── */
+.scroll-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, #D4AF37, transparent);
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.6; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(0.6); }
+}
+
+/* ─── Vignette overlay ──────────────────────────────────── */
+.vignette {
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.75) 100%);
+}
+
+/* ─── Individual floating particles ────────────────────── */
+.particle-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: #D4AF37;
+  opacity: 0;
+  animation: particle-float linear infinite;
+}
+@keyframes particle-float {
+  0%   { opacity: 0;    transform: translateY(0)      scale(0.5); }
+  15%  { opacity: 0.35; }
+  85%  { opacity: 0.15; }
+  100% { opacity: 0;    transform: translateY(-120px) scale(1.2); }
+}
+
+/* ─── CTA buttons ───────────────────────────────────────── */
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.cta-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.25) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+.cta-primary:hover::after { transform: translateX(100%); }
+.cta-primary:hover {
+  box-shadow: 0 0 32px rgba(212,175,55,0.45);
+  transform: translateY(-2px);
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  border: 1px solid hsl(var(--primary));
+  color: hsl(var(--primary));
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s, color 0.3s;
+}
+.cta-secondary:hover {
+  background: rgba(212,175,55,0.1);
+  box-shadow: 0 0 24px rgba(212,175,55,0.25);
+  transform: translateY(-2px);
+}
+
+/* ─── Section entrance animations ──────────────────────── */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s cubic-bezier(0.2,0.65,0.3,0.9),
+              transform 0.9s cubic-bezier(0.2,0.65,0.3,0.9);
+}
+.reveal-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Gold line draw animation for BrandStory ──────────── */
+.line-draw {
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 1.2s cubic-bezier(0.2,0.65,0.3,0.9);
+}
+.in-view .line-draw { transform: scaleX(1); }
+
+/* ─── Glassmorphism card ────────────────────────────────── */
+.glass-card {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212,175,55,0.15);
+}
+
+/* ─── Gold glow hover ───────────────────────────────────── */
+.glow-hover:hover {
+  box-shadow: 0 0 20px rgba(212,175,55,0.3);
+}
+
+/* ─── Magnetic button effect ────────────────────────────── */
+.magnetic {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ─── Product card hover state ──────────────────────────── */
+.product-card {
+  transition: transform 0.4s cubic-bezier(0.23,1,0.32,1), box-shadow 0.4s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.5), 0 0 30px rgba(212,175,55,0.12);
+}
+
+/* ─── Loading screen shimmer text ───────────────────────── */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    rgba(212,175,55,0.6) 0%,
+    rgba(248,246,240,1) 40%,
+    rgba(212,175,55,0.6) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-text-anim 3s linear infinite;
+}
+@keyframes shimmer-text-anim {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ─── Diamond sparkle ───────────────────────────────────── */
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50%       { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+/* ─── Cursor ────────────────────────────────────────────── */
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: #D4AF37;
+  border-radius: 50%;
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s;
+  mix-blend-mode: difference;
+}
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(212,175,55,0.7);
+  border-radius: 50%;
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-color 0.3s;
+}
+.cursor-ring.hovering {
+  width: 56px;
+  height: 56px;
+  border-color: #D4AF37;
 }

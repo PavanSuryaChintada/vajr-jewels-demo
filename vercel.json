@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd artifacts/vajr-jewels && npx vite build",
+  "buildCommand": "cd artifacts/vajr-jewels && pnpm build",
   "outputDirectory": "artifacts/vajr-jewels/dist",
   "installCommand": "npm install -g pnpm && pnpm install --no-frozen-lockfile",
   "framework": null
